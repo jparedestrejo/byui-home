@@ -33,6 +33,7 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  font-size: 2.5em;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -46,6 +47,13 @@
   content: '\e90d';
 }
 
+/*
+.icon-byui-logo{
+  background-color: black;
+  color: white;
+  padding: 0.3em;
+}
+*/
 .icon-search:before {
   content: '\e922';
 }
@@ -1033,6 +1041,10 @@ img {
 }
 
 .site-banner {
+  display: block;
+}
+
+.site-banner__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1040,5 +1052,21 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  font-size: 0.7em;
+  border: solid red 1px;
+}
+
+.site-banner__right {
+  border: 1px solid blue;
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+.icon-byui-logo {
+  width: 100%;
+}
+
+.icon-search, .icon-audience, .icon-menu {
+  background-color: cadetblue;
 }
 /*# sourceMappingURL=styles.css.map */

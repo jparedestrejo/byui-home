@@ -18,7 +18,7 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
+  font-size: 2.5em;//icon size
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,7 +31,13 @@
 .icon-byui-logo:before {
   content: '\e90d';
 }
-
+/*
+.icon-byui-logo{
+  background-color: black;
+  color: white;
+  padding: 0.3em;
+}
+*/
 .icon-search:before {
   content: '\e922';
 }
