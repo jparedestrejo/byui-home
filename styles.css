@@ -1031,4 +1031,14 @@ img {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+.site-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
 /*# sourceMappingURL=styles.css.map */
