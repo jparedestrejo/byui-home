@@ -1,6 +1,6 @@
 $break-small:360px;
 $break-medium:800px;
-$break-large:1500px;
+$break-large:1200px;
 
 @mixin breakpoint($break) {
     @if $break == large {
