@@ -23,6 +23,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
+  @include breakpoint(large){
+    font-size: 3.8em;//icon size
+  }
 }
 
 

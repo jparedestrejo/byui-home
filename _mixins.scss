@@ -4,15 +4,12 @@ $break-large:1200px;
 
 @mixin breakpoint($break) {
     @if $break == large {
-        @media (max-width: $break-large) { @content; }
+        @media (min-width: $break-large) { @content; }
     }
     @else if $break == medium {
-        @media (max-width: $break-medium) { @content; }
+        @media (min-width: $break-medium) { @content; }
     } @else {
         @media (max-width: $break-small) { @content; }
     }  
 }  
-@mixin display($columns){
-  display: grid;
-  grid-template-columns: repeat($columns, 1fr);
-}     
+   
