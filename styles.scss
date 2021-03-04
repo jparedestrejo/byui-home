@@ -48,7 +48,7 @@ img {
 
   grid-column: 1/2;
   grid-row: 1/2;
- 
+ text-align: center;
   background-color: black;
   padding: 0.3em;
   font-size: 1.8em;
@@ -75,7 +75,10 @@ img {
 .site-banner form{
   display: none;
 }
-@include breakpoint(small){
-  
+@include breakpoint(large){
+  .header-title{
+    grid-column: 1/3;
+    font-size: 3.2em;
+  }
 }
 

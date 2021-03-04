@@ -24,6 +24,13 @@
   -moz-osx-font-smoothing: grayscale;
   color: white;
 }
+@include breakpoint(large){
+  [class^='icon-'],
+  [class*=' icon-'] {
+    font-size: 3.8em;//icon size
+  }
+}
+
 
 .icon-location:before {
   content: '\e9f4';
