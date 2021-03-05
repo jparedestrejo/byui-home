@@ -1127,7 +1127,14 @@ img {
 }
 
 .float-right {
-  float: right !important;
+  float: right;
+  color: black;
+  font-size: 20px;
+}
+
+.button-info {
+  width: 100%;
+  text-align: left;
 }
 
 main {
@@ -1141,6 +1148,14 @@ main .newsroom {
 main .article {
   border: 1px solid #b4b3b5;
   margin-top: 10px;
+}
+
+main .sidebar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 10px;
 }
 
 @media (min-width: 1200px) {
