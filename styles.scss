@@ -86,14 +86,26 @@ img {
     display: none;
   }
   .items{
-    border: 1px solid gray;
+    border: 1px solid $med-gray;
+    margin-top: 25px;
+  }
+  .float-right{
+    float: right!important;
   }
  
   main{
+    margin-top: 30px;
+    .newsroom{
+      margin-top: 30px;
+    }
+    .article{
+      border: 1px solid $med-gray;
+      margin-top: 10px;
+    }
     @include breakpoint(large){
       display: grid;
       grid-template-columns: 3fr 1fr;
-      grid-template-rows: 45% 5% 45%;
+      grid-template-rows: auto auto auto;
       grid-gap: 30px;
       width: 90%;
       margin: 30px auto;
@@ -101,7 +113,9 @@ img {
        .presentation{
         grid-column: 1/2;
         grid-row: 1/2;
-  
+        .hero img{
+          width: 100%;
+        }
         .carroussel{
           display: grid;
           grid-template-columns: auto auto auto;
@@ -109,10 +123,32 @@ img {
           margin-top: 20px;
         }
       }
-      & .newsroom{
+      & .newsroom{//component
         grid-column: 1/2;
         grid-row: 3/4;
-border: 1px solid red;        
+        .article{
+          border: none;
+          border-top: 2px solid lightgray;
+          padding:25px 0px;
+        }  
+        .row{
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-gap: 25px;
+            & .article-date{
+              font-weight: bold;
+              font-size: 0.8em;
+            }
+            & a{
+              color:$byui-blue;
+              text-decoration: none;
+            }
+            & p{
+              margin-top: -10px;
+              font-size: 1.2em;
+              color: $med-gray;
+            }
+          }
       }
       & .sidebar{
         grid-column: 2/3;
@@ -120,7 +156,11 @@ border: 1px solid red;
       }
     }
   }
-
+footer{
+  background-color: $link-blue;
+  height: 100px;
+  margin-top: 20px;
+}
 
   
   
