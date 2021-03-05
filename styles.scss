@@ -64,9 +64,7 @@ img {
     grid-column: 2/3;
     grid-row: 1/2;
     padding: 0.5em;
-    text-align: right;
-    background-color:$link-blue;
-    
+    text-align: right;    
    }
    .site-banner__right a{
       text-decoration: none;
@@ -92,8 +90,11 @@ img {
 
   .float-right{
     float: right;
-    color: black;
+   
     font-size: 20px;
+  }
+  .btn-blue{
+    background-color:$link-blue;
   }
   .button-info{
     width: 100%;
@@ -105,10 +106,7 @@ img {
     .newsroom{
       margin-top: 30px;
     }
-    .article{
-      border: 1px solid $med-gray;
-      margin-top: 10px;
-    }
+   @include article-news(small);
     .sidebar{
       display: grid;
       grid-template-columns: 1fr;
@@ -139,29 +137,7 @@ img {
       & .newsroom{//component
         grid-column: 1/2;
         grid-row: 3/4;
-        .article{
-          border: none;
-          border-top: 2px solid lightgray;
-          padding:25px 0px;
-        }  
-        .row{
-            display: grid;
-            grid-template-columns: 1fr 4fr;
-            grid-gap: 25px;
-            & .article-date{
-              font-weight: bold;
-              font-size: 0.8em;
-            }
-            & a{
-              color:$byui-blue;
-              text-decoration: none;
-            }
-            & p{
-              margin-top: -10px;
-              font-size: 1.2em;
-              color: $med-gray;
-            }
-          }
+       @include article-news(large);
       }
       & .sidebar{
         grid-column: 2/3;

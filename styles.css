@@ -1090,7 +1090,6 @@ img {
   grid-row: 1/2;
   padding: 0.5em;
   text-align: right;
-  background-color: #0076b6;
 }
 
 .site-banner__right a {
@@ -1128,8 +1127,11 @@ img {
 
 .float-right {
   float: right;
-  color: black;
   font-size: 20px;
+}
+
+.btn-blue {
+  background-color: #0076b6;
 }
 
 .button-info {
@@ -1146,8 +1148,26 @@ main .newsroom {
 }
 
 main .article {
-  border: 1px solid #b4b3b5;
   margin-top: 10px;
+  border: none;
+  border-top: 2px solid lightgray;
+  padding: 25px 0px;
+}
+
+main .row .article-date {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+main .row a {
+  color: #056cb6;
+  text-decoration: none;
+}
+
+main .row p {
+  margin-top: -10px;
+  font-size: 1.2em;
+  color: #b4b3b5;
 }
 
 main .sidebar {
@@ -1198,6 +1218,7 @@ main .sidebar {
     grid-row: 3/4;
   }
   main .newsroom .article {
+    margin-top: 10px;
     border: none;
     border-top: 2px solid lightgray;
     padding: 25px 0px;
@@ -1208,19 +1229,6 @@ main .sidebar {
     -ms-grid-columns: 1fr 4fr;
         grid-template-columns: 1fr 4fr;
     grid-gap: 25px;
-  }
-  main .newsroom .row .article-date {
-    font-weight: bold;
-    font-size: 0.8em;
-  }
-  main .newsroom .row a {
-    color: #056cb6;
-    text-decoration: none;
-  }
-  main .newsroom .row p {
-    margin-top: -10px;
-    font-size: 1.2em;
-    color: #b4b3b5;
   }
   main .sidebar {
     -ms-grid-column: 2;

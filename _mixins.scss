@@ -12,4 +12,34 @@ $break-large:1200px;
         @media (max-width: $break-small) { @content; }
     }  
 }  
+@mixin article-news($break) {
+    .article{
+        margin-top: 10px;
+        border: none;
+        border-top: 2px solid lightgray;
+        padding:25px 0px;
+      }  
+      .row{
+          @if $break==large{
+          display: grid;
+          grid-template-columns: 1fr 4fr;
+          grid-gap: 25px;
+          }
+          @else{
+            & .article-date{
+                font-weight: bold;
+                font-size: 0.8em;
+            }
+            & a{
+                color:$byui-blue;
+                text-decoration: none;
+            }
+            & p{
+                margin-top: -10px;
+                font-size: 1.2em;
+                color: $med-gray;
+           }
+          }
+        }
+}
    
