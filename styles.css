@@ -1160,6 +1160,7 @@ img {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
+    border: 1px solid red;
   }
   main .sidebar {
     -ms-grid-column: 2;
