@@ -85,27 +85,34 @@ img {
   .site-banner form{
     display: none;
   }
+  .items{
+    border: 1px solid gray;
+  }
+ 
   main{
     @include breakpoint(large){
       display: grid;
       grid-template-columns: 3fr 1fr;
       grid-template-rows: 45% 5% 45%;
-      margin: 20px auto;
+      grid-gap: 30px;
       width: 90%;
-      & .presentation{
+      margin: 30px auto;
+   
+       .presentation{
         grid-column: 1/2;
         grid-row: 1/2;
-        & .carroussel{
-          display: flex;
-          justify-content: center;
-          & img{
-            width: 90%;
-          }
+  
+        .carroussel{
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-gap:20px;
+          margin-top: 20px;
         }
       }
       & .newsroom{
         grid-column: 1/2;
         grid-row: 3/4;
+        
       }
       & .sidebar{
         grid-column: 2/3;
