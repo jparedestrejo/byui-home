@@ -108,10 +108,9 @@ img {
   }
   .carroussel{
     display: flex;
-    justify-content: stretch;
-    & .items{
-      padding: 0;
-      margin: 0;
+    justify-content: center;
+    & img{
+      width: 90%;
     }
   }
 
