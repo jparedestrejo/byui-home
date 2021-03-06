@@ -95,17 +95,22 @@ img {
   }
   .btn-blue{
     background-color:$link-blue;
-    
+  }
+  .link-white{
+    color: white;
   }
   .button-info{
     width: 100%;
     text-align: left;
   }
+  .clear-both{
+    clear: both;
+  }
  
   main{
     margin-top: 30px;
     .newsroom{
-      margin-top: 30px;
+      margin: 50px 0px;
     }
    @include article-news(small);
     .sidebar{
@@ -138,6 +143,7 @@ img {
       & .newsroom{//component
         grid-column: 1/2;
         grid-row: 3/4;
+       
        @include article-news(large);
       }
       & .sidebar{
