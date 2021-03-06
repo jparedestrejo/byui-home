@@ -37,7 +37,7 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: black;
+  color: white;
 }
 
 @media (min-width: 1200px) {
@@ -1134,9 +1134,17 @@ img {
   background-color: #0076b6;
 }
 
+.link-white {
+  color: white;
+}
+
 .button-info {
   width: 100%;
   text-align: left;
+}
+
+.clear-both {
+  clear: both;
 }
 
 main {
@@ -1144,7 +1152,7 @@ main {
 }
 
 main .newsroom {
-  margin-top: 30px;
+  margin: 50px 0px;
 }
 
 main .article {
